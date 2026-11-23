@@ -1,0 +1,23 @@
+---
+layout: default
+title: "New York Closing Cost Calculator for 11733 Buyers & Sellers | 11733 Home Hub"
+description: "Estimate New York closing costs in Setauket and East Setauket: mansion tax, transfer tax, mortgage recording tax, title, attorney fees and commission, for buyers and sellers."
+---
+<section class="page-hero"><div class="wrap"><div class="crumbs"><a href="/index.html">Home</a> / <a href="/tools.html">Calculators</a> / Closing costs</div>
+<h1>NY closing cost calculator</h1><p class="lede">New York adds its own taxes at closing. See what a buyer brings to the table, or what a seller walks away with.</p></div></section>
+<section style="padding-top:28px"><div class="wrap calc" id="ccCalc">
+<div class="card">
+<div class="pill-tabs"><button type="button" class="on" data-side="buyer">I'm buying</button><button type="button" data-side="seller">I'm selling</button></div>
+<label for="cPrice">Sale price ($)</label><input id="cPrice" type="number" value="773000" step="5000">
+<div class="fgrid"><div><label for="cLoan">Mortgage amount ($)</label><input id="cLoan" type="number" value="618400" step="5000"></div>
+<div><label for="cAtty">Attorney fee ($)</label><input id="cAtty" type="number" value="2500" step="100"></div>
+<div><label for="cMrt">Mortgage recording tax, buyer (%)</label><input id="cMrt" type="number" value="0.80" step="0.05"></div>
+<div><label for="cTitle">Title insurance (%)</label><input id="cTitle" type="number" value="0.45" step="0.05"></div>
+<div><label for="cComm">Commission, seller (%)</label><input id="cComm" type="number" value="5" step="0.25"></div></div>
+<p class="note">Rules built in: buyers pay New York's 1% tax on residential purchases of $1M or more; sellers pay the 0.4% NYS transfer tax. Defaults for the recording-tax share, title and fees are editable estimates. Confirm every figure with your attorney.</p>
+</div>
+<div>
+<div class="card" style="margin-bottom:16px"><span class="small muted">Estimated closing costs</span><div class="big" id="cTotal">—</div><p class="muted" id="cPct"></p><p id="cNet" style="font-weight:600"></p></div>
+<div class="tbl"><table><thead><tr><th>Item</th><th>Estimate</th></tr></thead><tbody id="cRows"></tbody></table></div>
+<div class="card" style="margin-top:16px"><h3>Selling? Start with the right price</h3><p>Net proceeds depend on price far more than fees. Get a free value range first.</p><a class="btn btn-gold" href="/home-value.html">Free home value report</a></div>
+</div></div></section>

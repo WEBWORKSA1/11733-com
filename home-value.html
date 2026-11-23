@@ -1,0 +1,90 @@
+---
+layout: default
+title: "Free 11733 Home Value Report — Setauket & East Setauket | 11733 Home Hub"
+description: "Find out what your Setauket or East Setauket home could sell for. Free, human-reviewed value range with recent comparable sales and net-proceeds math."
+---
+<section class="page-hero"><div class="wrap"><div class="crumbs"><a href="/index.html">Home</a> / Home value report</div>
+<h1>What's your 11733 home worth today?</h1><p class="lede">Answer four quick steps and get a free value range for your address, with the recent nearby sales behind it, typically within one business day.</p></div></section>
+<section style="padding-top:28px"><div class="wrap article-grid">
+<div class="card">
+<form class="js-form js-lead multi" id="hvForm" data-subject="Home value report request" data-ok="Got it! Your 11733 value report is being prepared. Watch your inbox within one business day.">
+<div class="step-count">Step 1 of 4</div><div class="steps-bar"><i></i></div>
+<input type="hidden" name="lead_type" value="Seller / home value">
+<input type="hidden" name="estimate_preview" id="hvSummary">
+<input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+<div class="step on" data-auto>
+<h2>What best describes you?</h2>
+<div class="tiles">
+<label class="tile"><input type="radio" name="goal" value="Selling in 0-3 months" required><span><em>🚀</em>Selling in 0–3 months</span></label>
+<label class="tile"><input type="radio" name="goal" value="Selling in 3-12 months"><span><em>📅</em>Selling in 3–12 months</span></label>
+<label class="tile"><input type="radio" name="goal" value="Just curious"><span><em>🤔</em>Just curious</span></label>
+<label class="tile"><input type="radio" name="goal" value="Refinance / equity"><span><em>🏦</em>Refinance or equity</span></label>
+<label class="tile"><input type="radio" name="goal" value="Inherited / estate"><span><em>📜</em>Inherited or estate</span></label>
+<label class="tile"><input type="radio" name="goal" value="Tax grievance"><span><em>🧾</em>Checking my assessment</span></label>
+</div>
+<div class="step-nav"><span></span><button class="btn btn-gold" type="button" data-next>Next →</button></div>
+</div>
+
+<div class="step">
+<h2>Tell us about the property</h2>
+<label for="hvAddr">Street address <span class="req">*</span></label><input id="hvAddr" name="address" required autocomplete="street-address" placeholder="e.g. 12 Example Lane">
+<div class="fgrid">
+<div><label for="hvTown">Area</label><select id="hvTown" name="area"><option>East Setauket</option><option>Setauket</option><option>Old Field</option><option>Poquott</option><option>Stony Brook (11790)</option><option>Port Jefferson (11777)</option><option>Other nearby</option></select></div>
+<div><label for="hvType">Property type</label><select id="hvType" name="property_type"><option>Single-family</option><option>Condo / townhouse</option><option>Multi-family</option><option>Land</option></select></div>
+<div><label for="hvSqft">Living area (sq ft) <span class="req">*</span></label><input id="hvSqft" name="sqft" type="number" min="300" max="20000" value="2200" required></div>
+<div><label for="hvBeds">Beds / baths</label><input id="hvBeds" name="beds_baths" placeholder="4 bd / 2.5 ba"></div>
+</div>
+<div class="step-nav"><button class="btn btn-ghost" type="button" data-back>← Back</button><button class="btn btn-gold" type="button" data-next>Next →</button></div>
+</div>
+
+<div class="step">
+<h2>Condition and upgrades</h2>
+<div class="tiles">
+<label class="tile"><input type="radio" name="condition" value="needs" required><span><em>🧰</em>Needs work</span></label>
+<label class="tile"><input type="radio" name="condition" value="average" checked><span><em>🙂</em>Average</span></label>
+<label class="tile"><input type="radio" name="condition" value="updated"><span><em>✨</em>Updated</span></label>
+<label class="tile"><input type="radio" name="condition" value="renovated"><span><em>💎</em>Fully renovated</span></label>
+</div>
+<label>Upgrades (pick any)</label>
+<div class="tiles">
+<label class="tile"><input type="checkbox" name="extras" value="Kitchen"><span>Kitchen</span></label>
+<label class="tile"><input type="checkbox" name="extras" value="Baths"><span>Baths</span></label>
+<label class="tile"><input type="checkbox" name="extras" value="Roof/HVAC"><span>Roof / HVAC</span></label>
+<label class="tile"><input type="checkbox" name="extras" value="Solar"><span>Solar</span></label>
+<label class="tile"><input type="checkbox" name="extras" value="Pool"><span>Pool</span></label>
+<label class="tile"><input type="checkbox" name="extras" value="Water view/access"><span>Water view</span></label>
+</div>
+<div class="preview" aria-live="polite"><span class="small muted">Live ballpark (before comparable-sales review)</span><br><b id="hvPrev">—</b><p class="small muted" style="margin:4px 0 0">Uses the 11733 median of $379 per sq ft (Redfin, Oct 2025), adjusted for condition. Your report replaces this with real comparable sales.</p></div>
+<div class="step-nav"><button class="btn btn-ghost" type="button" data-back>← Back</button><button class="btn btn-gold" type="button" data-next>Next →</button></div>
+</div>
+
+<div class="step">
+<h2>Where should we send your report?</h2>
+<div class="fgrid">
+<div><label for="hvName">Full name <span class="req">*</span></label><input id="hvName" name="name" required autocomplete="name"></div>
+<div><label for="hvEmail">Email <span class="req">*</span></label><input id="hvEmail" name="email" type="email" required autocomplete="email"></div>
+<div><label for="hvPhone">Phone (optional, for faster answers)</label><input id="hvPhone" name="phone" type="tel" autocomplete="tel"></div>
+<div><label for="hvPref">Best way to reach you</label><select id="hvPref" name="contact_pref"><option>Email</option><option>Phone</option><option>Text</option></select></div>
+</div>
+<label for="hvNote">Anything we should know? (optional)</label><textarea id="hvNote" name="notes" placeholder="Recent renovations, timing, questions…"></textarea>
+<label class="check"><input type="checkbox" name="consent" value="yes" required> I agree that 11733.com may contact me about my request and that my details are handled under the <a href="/privacy.html">privacy policy</a>. <span class="req">*</span></label>
+<label class="check"><input type="checkbox" name="agent_intro" value="yes"> Optional: introduce me to one vetted local listing agent for a free in-person valuation.</label>
+<div class="step-nav"><button class="btn btn-ghost" type="button" data-back>← Back</button><button class="btn btn-gold" type="submit">Send my free report</button></div>
+</div>
+<p class="form-msg" role="status"></p>
+</form>
+<div class="trust"><span>Free, no obligation</span><span>Reviewed by a person</span><span>Never sold to list brokers</span><span>Unsubscribe anytime</span></div>
+</div>
+<aside class="side"><div class="card sticky">
+<h3>What's in your report</h3>
+<ul class="list-check"><li>Value range for your exact address</li><li>3–6 recent comparable sales nearby</li><li>Estimated net proceeds after NY transfer tax and costs</li><li>Best-month timing for 11733 listings</li><li>A prep list ranked by return</li></ul>
+<p class="note">An estimate, not an appraisal. 11733.com is not a brokerage. Referral relationships are disclosed on our <a href="/disclaimer.html">disclaimer</a> page.</p>
+<a class="btn btn-ghost btn-block" href="/closing-costs.html">Estimate seller costs</a>
+</div></aside>
+</div></section>
+<section class="alt"><div class="wrap" style="max-width:860px">
+<h2>How 11733 homes are valued</h2>
+<p>Price per square foot is a quick yardstick. Redfin put the 11733 median at <strong>$379 per sq ft</strong> in October 2025, on a median sale price of <strong>$773K</strong>. But no two streets in Setauket or East Setauket price alike. Water access, lot size, school assignment, the year of the last renovation and the season all move the number. That's why your report starts from the sales closest to your home in size, age and location, not a county-wide average.</p>
+<p>Want to understand the process first? Read <a href="/guides/selling-in-11733.html">Selling a home in 11733</a>, or check what you'd keep after costs with the <a href="/closing-costs.html">closing cost calculator</a>.</p>
+</div></section>

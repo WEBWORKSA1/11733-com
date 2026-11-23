@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<section class="page-hero"><div class="wrap"><div class="crumbs"><a href="/index.html">Home</a> / <a href="/guides/index.html">Guides</a></div><h1>{{ page.h1 | default: page.title }}</h1><p class="lede">{{ page.description }}</p><p class="meta">Reviewed {{ site.data.build.updated }} · {{ page.read }} min read · By the 11733 Home Hub editors</p></div></section>
+<section style="padding-top:8px"><div class="wrap article-grid">
+<article class="article">
+{{ content }}
+{% if page.sources %}<h2>Sources</h2><ul class="sources">{% for s in page.sources %}<li><a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.name }}</a></li>{% endfor %}</ul>{% endif %}
+<div class="callout"><strong>Not advice.</strong> This guide is general information. Rules, rates and tax figures change; confirm with a licensed New York attorney, broker, lender or tax professional before you act.</div>
+</article>
+<aside class="side">
+<div class="card sticky"><p class="eyebrow">Free for 11733</p><h3>Your home's value range</h3><p>Human-reviewed, with recent nearby sales.</p><a class="btn btn-gold btn-block" href="/home-value.html">Get my report</a><a class="btn btn-ghost btn-block" href="/get-quotes.html">Get 3 pro quotes</a>
+<h4>Calculators</h4><ul class="side-links"><li><a href="/mortgage.html">Mortgage</a></li><li><a href="/property-tax.html">Property tax</a></li><li><a href="/closing-costs.html">NY closing costs</a></li><li><a href="/affordability.html">Affordability</a></li></ul></div>
+</aside>
+</div></section>

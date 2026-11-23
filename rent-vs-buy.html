@@ -1,0 +1,27 @@
+---
+layout: default
+title: "Rent vs Buy Calculator for 11733 | 11733 Home Hub"
+description: "Compare the true net cost of renting versus buying in Setauket and East Setauket over time, including taxes, maintenance, appreciation, selling costs and investment returns."
+---
+<section class="page-hero"><div class="wrap"><div class="crumbs"><a href="/index.html">Home</a> / <a href="/tools.html">Calculators</a> / Rent vs buy</div>
+<h1>Rent or buy in 11733?</h1><p class="lede">Compare the net cost of each path year by year. Buying counts the equity you keep after selling costs. Renting counts what your down payment would earn if invested.</p></div></section>
+<section style="padding-top:28px"><div class="wrap calc" id="rbCalc">
+<div class="card">
+<div class="fgrid"><div><label for="rRent">Monthly rent ($)</label><input id="rRent" type="number" value="3800" step="50"></div>
+<div><label for="rRg">Rent growth (%/yr)</label><input id="rRg" type="number" value="3" step="0.25"></div>
+<div><label for="rPrice">Home price ($)</label><input id="rPrice" type="number" value="773000" step="5000"></div>
+<div><label for="rDown">Down payment (%)</label><input id="rDown" type="number" value="20" step="1"></div>
+<div><label for="rRate">Mortgage rate (%)</label><input id="rRate" type="number" value="7.28" step="0.01"></div>
+<div><label for="rTax">Property tax (%)</label><input id="rTax" type="number" value="2.0" step="0.05"></div>
+<div><label for="rMaint">Maintenance (%/yr)</label><input id="rMaint" type="number" value="1" step="0.25"></div>
+<div><label for="rApp">Home appreciation (%/yr)</label><input id="rApp" type="number" value="3" step="0.25"></div>
+<div><label for="rInv">Investment return (%/yr)</label><input id="rInv" type="number" value="5" step="0.25"></div>
+<div><label for="rYrs">Years</label><input id="rYrs" type="number" value="10" min="1" max="30"></div></div>
+<p class="note">Assumes 3% buyer closing costs, 6% selling costs and a 30-year loan. Rent is an editable example, not a market figure. Change every assumption to match your situation.</p>
+</div>
+<div>
+<div class="out"><div class="stat"><b id="rNetBuy">—</b><span>Net cost of buying</span></div><div class="stat"><b id="rNetRent">—</b><span>Net cost of renting</span></div></div>
+<p style="font-weight:600" id="rVerdict"></p>
+<div class="chart-box"><canvas id="rChart" role="img" aria-label="Net cost of buying versus renting by year"></canvas><div class="legend"><span><i style="background:var(--navy)"></i>Buy (net cost)</span><span><i style="background:var(--brick)"></i>Rent (net cost)</span></div></div>
+<div class="card" style="margin-top:16px"><h3>Leaning toward buying?</h3><a class="btn btn-gold" href="/buyers.html">Start a buyer match</a> <a class="btn btn-ghost" href="/affordability.html">Check affordability</a></div>
+</div></div></section>

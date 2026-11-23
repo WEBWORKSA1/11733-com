@@ -1,0 +1,22 @@
+---
+layout: default
+title: "11733 Property Tax Estimator — Suffolk County, NY | 11733 Home Hub"
+description: "Estimate annual and monthly property taxes for a Setauket or East Setauket home at Suffolk County effective rates, with exemption credits and a multi-year projection."
+---
+<section class="page-hero"><div class="wrap"><div class="crumbs"><a href="/index.html">Home</a> / <a href="/tools.html">Calculators</a> / Property tax</div>
+<h1>Property tax estimator for 11733</h1><p class="lede">Long Island property taxes are among the highest in the U.S. Estimate your bill, see a range of effective rates, and project the next few years.</p></div></section>
+<section style="padding-top:28px"><div class="wrap calc" id="taxCalc">
+<div class="card">
+<label for="tVal">Market value ($)</label><input id="tVal" type="number" value="773000" step="5000">
+<div class="fgrid"><div><label for="tRate">Effective rate (%)</label><input id="tRate" type="number" value="2.0" step="0.05"></div>
+<div><label for="tCredit">Exemptions / credits ($/yr)</label><input id="tCredit" type="number" value="0" step="100"></div>
+<div><label for="tYrs">Projection (years)</label><input id="tYrs" type="number" value="10" min="1" max="30"></div>
+<div><label for="tGrow">Annual increase (%)</label><input id="tGrow" type="number" value="2" step="0.25"></div></div>
+<p class="note">Published Suffolk County effective-rate estimates range from about 1.85% to 2.1%, and rates vary by school district. Your real bill depends on your assessed value and your district. Check it with the Town of Brookhaven assessor.</p>
+</div>
+<div>
+<div class="out"><div class="stat"><b id="tAnnual">—</b><span>Per year</span></div><div class="stat"><b id="tMonthly">—</b><span>Per month</span></div><div class="stat"><b id="tDaily">—</b><span>Per day</span></div><div class="stat"><b id="tTotal">—</b><span>Over projection</span></div></div>
+<div class="chart-box"><canvas id="tChart" role="img" aria-label="Cumulative property tax paid"></canvas><div class="legend"><span><i style="background:var(--teal)"></i>Cumulative tax paid</span></div></div>
+<h3 style="margin-top:18px">Same home, different rates</h3><div class="tbl"><table><thead><tr><th>Effective rate</th><th>Per year</th><th>Per month</th></tr></thead><tbody id="tTable"></tbody></table></div>
+<div class="card" style="margin-top:16px"><h3>Think you're over-assessed?</h3><p>Brookhaven owners can grieve their assessment each year. Start by checking your home's market value against recent sales.</p><a class="btn btn-gold" href="/home-value.html">Check my value</a> <a class="btn btn-ghost" href="/guides/property-tax-grievance.html">Grievance guide</a></div>
+</div></div></section>

@@ -1,0 +1,29 @@
+---
+layout: default
+title: "Mortgage Calculator for 11733 (PITI, PMI, Amortization) | 11733 Home Hub"
+description: "Monthly mortgage payment for Setauket and East Setauket homes, including Suffolk-level property tax, insurance, PMI, HOA, extra principal and a full amortization schedule."
+---
+<section class="page-hero"><div class="wrap"><div class="crumbs"><a href="/index.html">Home</a> / <a href="/tools.html">Calculators</a> / Mortgage</div>
+<h1>11733 mortgage calculator</h1><p class="lede">The real monthly cost of a North Shore home: principal, interest, property tax, insurance, PMI and HOA, plus what extra principal saves you.</p></div></section>
+<section style="padding-top:28px"><div class="wrap calc" id="mortCalc">
+<div class="card">
+<label for="mPrice">Home price ($)</label><input id="mPrice" type="number" value="773000" step="5000">
+<div class="fgrid"><div><label for="mDown">Down payment (%)</label><input id="mDown" type="number" value="20" step="1" min="0" max="100"></div>
+<div><label for="mRate">Interest rate (%)</label><input id="mRate" type="number" value="7.28" step="0.01"></div>
+<div><label for="mTerm">Term (years)</label><select id="mTerm"><option>30</option><option>20</option><option>15</option><option>10</option></select></div>
+<div><label for="mTax">Property tax (% of value)</label><input id="mTax" type="number" value="2.0" step="0.05"></div>
+<div><label for="mIns">Home insurance ($/yr)</label><input id="mIns" type="number" value="2400" step="100"></div>
+<div><label for="mHoa">HOA ($/mo)</label><input id="mHoa" type="number" value="0" step="25"></div></div>
+<label for="mExtra">Extra principal ($/mo)</label><input id="mExtra" type="number" value="0" step="50">
+<p class="note">Default rate: Freddie Mac 30-year average of 7.28% (Nov 19, 2026). Default tax: 2.0%, inside published Suffolk County estimates of about 1.85%–2.1%. PMI is estimated at 0.6% a year below 20% down. Your lender's numbers will differ.</p>
+</div>
+<div>
+<div class="card" style="margin-bottom:16px"><span class="small muted">Estimated monthly payment</span><div class="big" id="mTotal">—</div><div class="bar-stack" id="mStack"></div>
+<div class="legend"><span><i style="background:var(--navy)"></i>Principal &amp; interest</span><span><i style="background:var(--teal)"></i>Tax</span><span><i style="background:var(--gold)"></i>Insurance</span><span><i style="background:var(--brick)"></i>PMI + HOA</span></div></div>
+<div class="out"><div class="stat"><b id="mPI">—</b><span>Principal &amp; interest</span></div><div class="stat"><b id="mTaxO">—</b><span>Property tax / mo</span></div><div class="stat"><b id="mInsO">—</b><span>Insurance / mo</span></div><div class="stat"><b id="mPmi">—</b><span>PMI / mo</span></div><div class="stat"><b id="mLoan">—</b><span>Loan amount</span></div><div class="stat"><b id="mInt">—</b><span>Total interest</span></div><div class="stat"><b id="mPayoff">—</b><span>Payoff time</span></div></div>
+<div class="chart-box"><canvas id="mChart" aria-label="Loan balance and cumulative interest by year" role="img"></canvas><div class="legend"><span><i style="background:var(--navy)"></i>Remaining balance</span><span><i style="background:var(--gold)"></i>Cumulative interest</span></div></div>
+<div style="margin-top:16px" class="card"><h3>Next step</h3><p>Rates vary by lender by a quarter point or more. Comparing two or three quotes can save thousands.</p><a class="btn btn-gold" href="/buyers.html">Get matched with lenders</a></div>
+</div>
+</div>
+<div class="wrap" style="margin-top:22px"><h2>Amortization schedule</h2><div class="tbl"><table><thead><tr><th>Year</th><th>Principal paid</th><th>Interest paid</th><th>Balance</th></tr></thead><tbody id="mTable"></tbody></table></div></div>
+</section>
